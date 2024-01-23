@@ -1,0 +1,253 @@
+/* Univesal box sizing */
+*{
+    box-sizing: border-box;
+}
+/* Set the size and background color of the body */
+body{
+    width: 100%;
+    background-color: lightgrey;
+}
+/* Styling for the header */
+.header{
+    font-size: 4vw;
+    display:flex;
+    background-color: aqua;
+    padding: 10px;
+    margin: 0px;
+    justify-content: center;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+/* styling and sizing for the logo image */
+.logo{
+    max-width: 5%;
+    max-height: 5%;
+}
+/* Styling for the top navigation bar */
+.navbar{
+    overflow: hidden;
+    background-color: black;
+    display:flex;
+    justify-content: space-around;
+}
+/* Styling fo the navbar links */
+.navbar a {
+    font-size: 20pt;
+    text-decoration: none;
+    justify-content: center;
+    float: right;
+    color: white;
+    width: 100%;
+    padding: 25px; 
+    font-family: 'EB Garamond', serif;
+}
+/* Styling for the navbar when hovering over links */
+a:hover{
+    color: black;
+    background-color: White;
+}
+/* Styling for the heading on each page */
+.pageheading{
+    text-align: center;
+    font-size: 30pt;
+    background-color: lightgray;
+    margin: 25px;
+    font-family: 'EB Garamond', serif;
+}
+/* Styling for the headings of boxes */
+.boxheading{
+    font-size: 25pt;
+    font-family: 'EB Garamond', serif;
+    justify-content: center;
+    vertical-align: top;
+}
+/* Container used to create rows */
+.container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+/* Container used to create columns */
+.columncontainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/* Row elements for holding content */
+.box{
+    font-size: 15pt;
+    font-family:  'Open Sans', sans-serif;
+    display: flex;
+    margin: 10px;
+    padding: 30px;
+    background-color: lightgray;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    max-width: 800px;
+    height: auto;
+}
+/* Slightly smaller box used for homescreen elements */
+.smallbox{
+    font-size: 15pt;
+    font-family:  'Open Sans', sans-serif;
+    display: flex;
+    margin: 10px;
+    padding: 50px;
+    background-color: lightgray;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    max-width: 400px;
+    height: auto;
+}
+/* Box styling for sub navigation */
+.subnavbox{
+    font-size: 15pt;
+    font-family:  'Open Sans', sans-serif;
+    display: flex;
+    margin: 10px;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    max-width: 750px;
+    margin-bottom: 50px;
+}
+/* Styling for images on the homepage */
+.homepageimg{
+    max-width: 750px;
+    max-height: auto;
+    padding: 10px;
+}
+/* Styling for the footer */
+footer{
+    text-align: center;
+    background-color: lightgray;
+    font-family: 'Open Sans', sans-serif;
+}
+/* Removes bullet points from unordered lists */
+ul.no-bullets{
+    list-style-type: none;
+}
+/* Seperate container styling for menu items */
+.menucontainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+/* Styling for menu item desription boxes */
+.menudescriptionbox{
+    display: flex;
+    font-size: 15pt;
+    font-family: 'Open Sans', sans-serif;
+    padding: 20px;
+    margin: 10px;
+    width: 500px;
+    align-items: center;
+    justify-content: center;
+}
+/* Styling for the boxes that hold the menu images */
+.menuimagebox{
+    display: flex;
+    width: 150px;
+    height: 100px;
+}
+/* Styling for the headers that seperate each section of the menu */
+.menusectionheading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 23pt;
+    font-family: 'EB Garamond', serif;
+    text-align: center;
+    margin: 50px;
+    background-color: aqua;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+/* Styling for the name of each menu item */
+dt{
+    text-align: center;
+    background-color: aqua;
+}
+/* Stying information for each section header of the drinks menu */
+.drinksheader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 23pt;
+    font-family: 'EB Garamond', serif;
+    background-color: aqua;
+    width: 500px;
+    margin-right: 150px;
+}
+/* Box styling for the drinks menu */
+.drinksbox{
+    display: flex;
+    font-size: 15pt;
+    font-family: 'Open Sans', sans-serif;
+    padding: 20px;
+    margin: 10px;
+    width: 800px;
+    align-items: center;
+    justify-content: center;
+}
+/* Styling for the sizing of the images on the menu */
+.menuimage{
+    width: 150px;
+    height: 100px;
+}
+/* Styling to adjust layout options when the application is viewed on a smaller device */
+@media screen and (max-width: 1200px) {
+    .container {
+        flex-direction: column;
+    }
+    .homepageimg{
+        max-width: 75%;
+    }
+    .navbar a{
+        font-size: 2.2vw;
+    }
+    .box{
+        font-size: 2.5vw;
+    }
+    .pageheading{
+        font-size: 4vw;
+    }
+    .boxheading{
+        font-size: 3vw;
+    }
+    iframe{
+        width:550px;
+    }
+    .menucontainer{
+        flex-direction: column;
+    }
+    .menudescriptionbox{
+        font-size: 2.5vw;
+    }
+    dt{
+        font-size: 3vw;
+    }
+    .menuimagebox{
+        width:150px;
+    }
+    .menusectionheading{
+        margin-top: 75px;
+    }
+    .drinksheader{
+        margin-right: 0px;
+        margin-top: 75px;
+    }
+    .drinksbox{
+        font-size: 2.5vw;
+    }
+    .subnavbox{
+        font-size: 2.5vw;
+    }
+
+}
